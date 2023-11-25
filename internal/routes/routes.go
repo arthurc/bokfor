@@ -10,7 +10,9 @@ import (
 func AddRoutes(e *echo.Echo) {
 	e.Use(middleware.Logger())
 	
-	e.GET("/", func (c echo.Context) error {
-		return c.Render(http.StatusOK, "application.html", nil)
-	})
+	e.GET("/", index)
+}
+
+func index (c echo.Context) error {
+	return c.Render(http.StatusOK, "application.html", nil)
 }
