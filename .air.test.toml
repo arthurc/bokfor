@@ -1,0 +1,8 @@
+[build]
+  bin = "/usr/bin/true"
+  cmd = "go test -v ./..."
+  exclude_regex = []
+  delay = 1
+
+[screen]
+  clear_on_rebuild = true
